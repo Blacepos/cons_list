@@ -63,7 +63,7 @@ where T: Display {
 
 impl<T> Debug for List<T>
 where T: Display {
-	fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         write!(f, "List [{}]", self.join_string(","))
     }
 }
